@@ -22,7 +22,9 @@ function App() {
   }
 
 
-
+  const handleReturn=()=>{
+    setIsVisible((prevState) => !prevState)
+  }
 
 
   return (
@@ -45,15 +47,15 @@ function App() {
     <div className="btn-rank">
       <ul className="list">
         <li className={`b-r ${activeValue === 1 ? 'active' : ''}`}
-          onClick={()=>handleClick(1)}>1</li>
-        <li className={`b-r ${activeValue === 2 ? 'active' : ''}`}
-          onClick={()=>handleClick(2)}>2</li>
+          onClick={()=>handleClick(1)}><button>1</button></li>
+       <li className={`b-r ${activeValue === 2 ? 'active' : ''}`}
+          onClick={()=>handleClick(2)}><button>2</button></li>
           <li className={`b-r ${activeValue === 3 ? 'active' : ''}`}
-          onClick={ ()=>handleClick(3)}>3</li>
-          <li className={`b-r ${activeValue=== 4 ? 'active' : ''}`}
-          onClick={()=>handleClick(4)}>4</li>
-          <li className={`b-r ${activeValue === 5 ? 'active' : ''}`}
-          onClick={()=>handleClick(5)}>5</li>
+          onClick={()=>handleClick(3)}><button>3</button></li>
+       <li className={`b-r ${activeValue === 4 ? 'active' : ''}`}
+          onClick={()=>handleClick(4)}><button>4</button></li>
+         <li className={`b-r ${activeValue === 5 ? 'active' : ''}`}
+          onClick={()=>handleClick(5)}><button>5</button></li>
       </ul>
     </div>
 
@@ -75,8 +77,11 @@ function App() {
             <img src={Img} alt="Beskrivning av bilden" />
           </div>
 
+          <div className="txtcont">
+
           <div className='txt-rate'>
-            <p>you have rating {activeValue} of 5</p>
+            <p>You have rating {activeValue} of 5</p>
+          </div>
           </div>
 
           <div className="head-thnk">
@@ -84,11 +89,15 @@ function App() {
           </div>
 
           <div className="text-thnk">
-            we appreciate you taking the time 
+            We appreciate you taking the time 
             to give a rating. If you ever need
-            more support don't hesitate to get
-            in touch!
+            more support don't hesitate to get in touch!
           </div>
+
+          <div className="btn-return">
+      <button className="btn-r"  onClick={handleReturn}>RETURN</button>
+
+    </div>
 
           </div>
 

@@ -68,20 +68,27 @@ ul{
   list-style-type: none;
 }
 
-li:hover{
+li button:hover{
   background-color:hsl(25, 97%, 53%) ;
   color: white;
-  cursor: pointer;
+  
 }
 
-li:active,li:focus{
-  background-color: hsl(217, 12%, 63%);
-  color: white;
+li button:active,:focus{
+  background-color:white;
+  color:hsl(25, 97%, 53%);
   cursor: pointer;
+  transition: 0.2s;
   
 } 
 
-li{
+
+
+
+
+
+
+ button{
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -90,6 +97,8 @@ li{
   justify-content: center;
   align-items: center;
   color: hsl(217, 12%, 63%);
+  border: none;
+  outline: none;
   
   
 }
@@ -122,4 +131,60 @@ li{
   display: flex;
   justify-content: center;
   
+}
+
+.txtcont{
+  display: flex;
+  justify-content: center;
+}
+
+.txt-rate{
+ margin-top: 30px;
+  width: 190px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: hsl(214, 21%, 15%);
+  color: orange;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.head-thnk{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.text-thnk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-left: 36px;
+ margin-right: 36px;
+  margin-top: 15px;
+  font-size: 14px;
+  color:hsl(217, 12%, 63%) ;
+}
+
+.btn-r{
+  margin-left: 36px;
+  margin-right: 36px;
+  margin-top: 15px;
+  width: 340px;
+  height: 40px;
+  border-radius: 20px;
+  background-color:hsl(25, 97%, 53%) ;
+  color: white;
+  border: 1px solid hsl(25, 97%, 53%) ;
+  letter-spacing: 5px;
+}
+
+.btn-r:hover{
+  background-color: white;
+  color:hsl(25, 97%, 53%) ;
 }

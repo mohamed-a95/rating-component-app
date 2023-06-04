@@ -1,4 +1,4 @@
-import Card from "./components/Card";
+
 import myImage from "./images/icon-star.svg"
 import Img from "./images/illustration-thank-you.svg"
 import { useState } from "react";
@@ -80,7 +80,7 @@ function App() {
           <div className="txtcont">
 
           <div className='txt-rate'>
-            <p>You have rating {activeValue} of 5</p>
+            <p>You selected {activeValue} of 5</p>
           </div>
           </div>
 
